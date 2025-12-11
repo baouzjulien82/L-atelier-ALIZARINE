@@ -238,8 +238,8 @@ footer {
     margin: auto;
 }
 .img-thumbnail {
-    width: 200px;        /* largeur fixe */
-    height: 200px;       /* hauteur fixe */
+    width: 150px;        /* largeur fixe */
+    height: 150px;       /* hauteur fixe */
     object-fit: cover;   /* recadre l’image sans la déformer */
     margin: 5px;
     transition: transform 0.3s ease; /* transition douce */
