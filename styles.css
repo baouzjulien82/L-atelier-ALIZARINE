@@ -1,8 +1,10 @@
+/* ================= VARIABLES ================= */
 :root {
   --alizarine: #E32636;
   --alizarine-hover: #e81a2c;
 }
 
+/* ================= NAVBAR ================= */
 .navbar {
   background: linear-gradient(to bottom, rgba(227,38,54,0.05), #fff);
 }
@@ -22,75 +24,83 @@
   color: var(--alizarine-hover) !important;
   border-bottom-color: var(--alizarine-hover); /* on change juste la couleur */
 }
-/* Fond du menu déroulant */
+
+/* ================= DROPDOWN ================= */
 .dropdown-menu {
   background-color: #fff; /* ou bordeaux si tu veux un fond coloré */
   border: 1px solid var(--alizarine);
 }
 
-/* Liens du dropdown */
 .dropdown-item {
-  color: var(--alizarine); /* texte rouge comme le reste du nav */
+  color: var(--alizarine);
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Hover sur les items */
 .dropdown-item:hover {
-  color: #fff; /* texte blanc */
-  background-color: var(--alizarine-hover); /* fond rouge foncé */
+  color: #fff;
+  background-color: var(--alizarine-hover);
 }
 
+/* ================= PAGES ================= */
 .page {
-    height: auto;       /* laisse la section s’adapter au contenu */
-    min-height: 100vh;  /* garde un minimum de hauteur */
-    padding-top: 60px;
-    background: linear-gradient(to bottom, rgba(227,38,54,0.05), #fff);
-
+  height: auto;
+  min-height: 100vh;
+  padding-top: 60px;
+  background: linear-gradient(to bottom, rgba(227,38,54,0.05), #fff);
 }
 
 .page-end {
-    padding-top: 60px;
-    min-height: 50vh;
-    background: linear-gradient(to bottom, rgba(227,38,54,0.05), #fff);
+  padding-top: 60px;
+  min-height: 50vh;
+  background: linear-gradient(to bottom, rgba(227,38,54,0.05), #fff);
 }
 
 .page-content {
-    width: 90%;
-    padding: 10px;
-    margin: auto;
+  width: 90%;
+  padding: 10px;
+  margin: auto;
 }
 
+/* ================= ACCUEIL ================= */
 #accueil-alizarine {
-    padding-top: 60px;
-    background-image: url("/atelier-Alizarine/media/img/chevaux\ peinture.jpg");
-    background-size: 80% auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  padding-top: 60px;
+  background-image: url("/atelier-Alizarine/media/img/chevaux peinture.jpg");
+  background-size: 80% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
+/* ================= TITRES & TEXTES ================= */
 h1 {
-    font-size: 4rem !important;
-    font-family: 'Playfair Display', serif;
+  font-size: 4rem !important;
+  font-family: 'Playfair Display', serif;
 }
+
 h2, h3 {
   font-family: 'Playfair Display', serif;
-   color: var(--alizarine);
+  color: var(--alizarine);
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
+
 body, .navbar, p {
   font-family: 'Montserrat', sans-serif;
 }
+
 a {
   color: #B22222;
 }
+
 a:hover {
   color: var(--alizarine);
 }
+
 hr {
   color: var(--alizarine);
   width: 300px;
@@ -98,38 +108,39 @@ hr {
   padding-bottom: 30px;
 }
 
-
+/* ================= IMAGES ================= */
 .img-thumbnail {
-    width: 220px;        /* largeur fixe */
-    height: 220px;       /* hauteur fixe */
-    object-fit: cover;   /* recadre l’image sans la déformer */
-    margin: 5px;
-    transition: transform 0.3s ease; /* transition douce */
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  margin: 5px;
+  transition: transform 0.3s ease;
 }
 
-.img-thumbnail:hover{
-    transform: scale(1.05); /* léger grossissement (5%) */
-    cursor: pointer;
+.img-thumbnail:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 #groupe-img {
-    max-width:500px;
-    height: auto;
-    border: 2.5px solid var(--alizarine);
+  max-width: 500px;
+  height: auto;
+  border: 2.5px solid var(--alizarine);
 }
 
 #historique-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px 0 0 5px !important; /* arrondi seulement à gauche */
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 0 0 5px !important;
+  object-fit: cover;
+  display: block;
 }
 
 .card img {
-  border-radius: .25rem 0 0 .25rem; /* haut gauche arrondi, bas gauche carré */
+  border-radius: .25rem 0 0 .25rem;
 }
 
+/* ================= CARDS ================= */
 .card {
   border: 1px solid rgba(227, 38, 54, 0.3);
   box-shadow: 0 4px 12px rgba(227, 38, 54, 0.15);
@@ -137,30 +148,32 @@ hr {
   color: whitesmoke;
 }
 
-.text-muted{
-    font-size: 0.8rem;
+.text-muted {
+  font-size: 0.8rem;
 }
 
 .span-rs-link {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
+/* ================= GALERIE ================= */
 .galerie-img {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* centre horizontalement */
-  gap: 10px;               /* espace entre les images (optionnel si tu utilises déjà margin) */
+  justify-content: center;
+  gap: 10px;
 }
 
+/* ================= LIGHTBOX ================= */
 .lightbox {
-  display: none;              /* caché par défaut */
+  display: none;
   position: fixed;
   z-index: 9999;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.8); /* fond noir transparent */
+  background-color: rgba(0,0,0,0.8);
   justify-content: center;
   align-items: center;
 }
@@ -182,6 +195,7 @@ hr {
   cursor: pointer;
 }
 
+/* ================= COOKIE BANNER ================= */
 .cookie-banner {
   position: fixed;
   bottom: 0;
@@ -193,32 +207,18 @@ hr {
   text-align: center;
   z-index: 10000;
 }
+
 .cookie-banner p {
   margin: 0 0 8px 0;
 }
 
-h2, h3 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.page-content .pt-3 {
-  max-width: 800px;   /* largeur maximale du texte */
-  margin: 0 auto;     /* centre horizontalement */
-  text-align: center; /* optionnel : aligne le texte proprement */
-}
-.intro-evenement {
-  text-align:center;
-  max-width: 800px;
-  margin: auto;
-  padding-bottom: 30px;
-}
+/* ================= FOOTER ================= */
 footer {
   background: linear-gradient(to bottom, rgba(227,38,54,0.05), #fff);
   border-top: 1px solid #e3263649;
 }
 
-/* Taille du bouton */
+/* ================= NAVBAR TOGGLER ================= */
 .navbar-toggler {
   border: none;
   background: transparent;
@@ -229,144 +229,115 @@ footer {
   gap: 5px;
 }
 
-/* Traits du toggler */
 .toggler-icon {
   width: 30px;
   height: 3px;
-  background-color: var(--alizarine); /* couleur par défaut */
+  background-color: var(--alizarine);
   transition: all 0.3s ease;
 }
 
-/* ----- ÉTAT FERMÉ ----- */
+/* État fermé */
 .navbar-toggler.collapsed .top-bar,
 .navbar-toggler.collapsed .middle-bar,
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0) translateY(0);
-  opacity: 1; /* barre du milieu visible */
-  background-color: var(--alizarine); /* traits droits */
+  opacity: 1;
+  background-color: var(--alizarine);
 }
 
-/* ----- ÉTAT OUVERT (croix) ----- */
+/* État ouvert (croix) */
 .navbar-toggler:not(.collapsed) .top-bar {
   transform: translateY(8px) rotate(45deg);
 }
 
 .navbar-toggler:not(.collapsed) .middle-bar {
-  opacity: 0; /* barre du milieu disparaît */
+  opacity: 0;
 }
 
 .navbar-toggler:not(.collapsed) .bottom-bar {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* couleur du X ouvert */
 .navbar-toggler:not(.collapsed) .toggler-icon {
-  background-color: rgb(0, 0, 0); /* noir ou ce que tu veux */
+  background-color: #000;
 }
 
-/* Retirer outline focus */
 .navbar-toggler:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 
-
-
-/* Limite la taille des images sur petits écrans */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 576px) {
-
   #accueil-alizarine {
-    background-image: url("/atelier-Alizarine/media/img/chevaux\ peinture.jpg");
     background-size: 280%;
     background-position: -200px center;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
+  }
 
   #historique-img {
-    width: 100%;
     height: 240px;
-    object-fit: cover;
-    display: block;
     border-radius: 5px 5px 0 0 !important;
   }
-  .page {
-    height: auto;       /* laisse la section s’adapter au contenu */
-    min-height: 100vh;  /* garde un minimum de hauteur */
-  }
-  
+
   .page-content {
     width: 100%;
-    padding: 10px;
-    margin: auto;
-}
-.img-thumbnail {
-    width: 150px;        /* largeur fixe */
-    height: 150px;       /* hauteur fixe */
-    object-fit: cover;   /* recadre l’image sans la déformer */
-    margin: 5px;
-    transition: transform 0.3s ease; /* transition douce */
-}
-#groupe-img {
-    max-width:100%;
-    height: auto;
-    border: 2.5px solid var(--alizarine);
-}
-footer {
-  font-size: 0.8rem;
-}
-h1 {
+  }
+
+  .img-thumbnail {
+    width: 150px;
+    height: 150px;
+  }
+
+  #groupe-img {
+    max-width: 100%;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  h1 {
     font-size: 2.5rem !important;
-}
-h5{
-  font-size: 1rem;
-}
-.card-body>ul>li {
-  font-size: 0.9rem;
-}
-p {
-  font-size: 0.8rem;
-}
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  .card-body > ul > li {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 1300px) {
-  #galerie>.page-content {
+  #galerie > .page-content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .galerie-img {
     max-width: 90%;
   }
 }
 
 @media (max-width: 1300px) and (min-width: 577px) {
-#accueil-alizarine {
-    background-image: url("/atelier-Alizarine/media/img/chevaux\ peinture.jpg");
+  #accueil-alizarine {
     background-size: 200%;
     background-position: -250px center;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
-#historique-img {
-    width: 100%;
+  }
+
+  #historique-img {
     height: 240px;
-    object-fit: cover;
-    display: block;
     border-radius: 5px 5px 0 0 !important;
   }
 }
 
 @media (max-width: 1020px) and (min-width: 768px) {
-  /* Tes styles ici */
   #img-evnmt {
     width: 200%;
     height: 450px;
